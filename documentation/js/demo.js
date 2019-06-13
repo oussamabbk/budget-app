@@ -38,7 +38,7 @@ demo = {
         dataDailySalesChart = {
             labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
             series: [
-                [12, 17, 7, 17, 23, 18, 38]
+                [10, 10, 10, 17, 23, 18, 38]
             ]
         };
 
@@ -60,25 +60,25 @@ demo = {
 
         /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
-        dataDailySalesChart = {
-            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-            series: [
-                [12, 17, 7, 17, 23, 18, 38]
-            ]
-        };
+    //    dataDailySalesChart = {
+    //        labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+      //      series: [
+        //        [10, 10, 7, 17, 10, 10, 10]
+        //    ]
+        //};
 
-        optionsDailySalesChart = {
-            lineSmooth: Chartist.Interpolation.cardinal({
-                tension: 0
-            }),
-            low: 0,
-            high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
-            chartPadding: { top: 0, right: 0, bottom: 0, left: 0},
-        }
+        //optionsDailySalesChart = {
+        //    lineSmooth: Chartist.Interpolation.cardinal({
+        //        tension: 0
+        //    }),
+        //    low: 0,
+        //    high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        //    chartPadding: { top: 0, right: 0, bottom: 0, left: 0},
+        //}
 
-        var dailySalesChart = new Chartist.Line('#dailySalesChart', dataDailySalesChart, optionsDailySalesChart);
+        //var dailySalesChart = new Chartist.Line('#dailySalesChart', dataDailySalesChart, optionsDailySalesChart);
 
-        md.startAnimationForLineChart(dailySalesChart);
+        //md.startAnimationForLineChart(dailySalesChart);
 
 
 
