@@ -3,19 +3,21 @@
     <!-- main -->
     <div class="main-w3layouts wrapper">
       <br />
-      <br />
       <h1>crée un compte</h1>
       <div class="main-agileinfo">
         <div class="agileits-top">
           <form action="#" method="post">
-            <input
-              class="text email"
-              type="text"
+            <div
+              (click)="verifnom(naa, designeerreur)"
+              [ngClass]="designeerreur === true ? 'sanserreur' : 'avecerreur'"
+              type="input"
               name="Username"
-              placeholder="name"
               required
+              contenteditable="true"
+              data-text="Nom"
+              id="aaa"
               #naa
-            />
+            ></div>
             <p
               (click)="verif(naa, mdp1, mdp2, email, nomb, num)"
               class="erreur"
