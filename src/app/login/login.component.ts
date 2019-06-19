@@ -9,20 +9,23 @@ import { DashboardComponent } from "app/dashboard/dashboard.component";
   styleUrls: ["./login.component.css"]
 })
 export class LoginComponent implements OnInit {
-  verif = " ";
   constructor(private router: Router) {}
+  erreurlogin = "";
 
   ngOnInit() {}
   showLoginModal() {}
   showRegisterModal() {}
-  onedit(email, password, verif) {
+  onedit(email, password) {
     if (email == "admin" && password == "admin") {
       this.router.navigate(["/dashboard"]);
     } else {
-      this.verif = "verifier votre mot de passe";
+      this.erreurlogin = "verifier votre mot de passe";
     }
-    console.log(password, email, verif);
+
+    console.log(password, email);
     //this.router.navigate(["/dashboard"]);
   }
-  newcompte() {}
+  gotoregister() {
+    this.router.navigate(["/register"]);
+  }
 }

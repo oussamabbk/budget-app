@@ -1,0 +1,144 @@
+<div id="style-default">
+  <div class="body">
+    <!-- main -->
+    <div class="main-w3layouts wrapper">
+      <br />
+      <br />
+      <h1>crée un compte</h1>
+      <div class="main-agileinfo">
+        <div class="agileits-top">
+          <form action="#" method="post">
+            <input
+              class="text email"
+              type="text"
+              name="Username"
+              placeholder="name"
+              required
+              #naa
+            />
+            <p
+              (click)="verif(naa, mdp1, mdp2, email, nomb, num)"
+              class="erreur"
+            >
+              {{ nom }}
+            </p>
+
+            <input
+              class="text email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              #email1
+            />
+            <p
+              (click)="verif(naa, mdp1, mdp2, email1, nomb, num)"
+              class="erreur"
+            >
+              {{ veremail }}
+            </p>
+            <input
+              class="text w3lpass"
+              type="password"
+              name="password"
+              placeholder="mot de passe"
+              required
+              #mdp1
+            />
+            <input
+              class="text w3lpass"
+              type="password"
+              name="password"
+              placeholder="Confirmr mot de passe"
+              required
+              #mdp2
+            />
+            <p
+              (click)="verif(naa, mdp1, mdp2, email1, nomb, num)"
+              class="erreur"
+            >
+              {{ motdepasse }}
+            </p>
+            <input
+              class="text w3lpass"
+              type="text"
+              name="bank"
+              placeholder="nom de bank"
+              required
+              #nomb
+            />
+            <p
+              (click)="verif(naa, mdp1, mdp2, email1, nomb, num)"
+              class="erreur"
+            >
+              {{ nombank }}
+            </p>
+            <input
+              class="text w3lpass"
+              type="text"
+              name="num"
+              placeholder="numero de compte"
+              required
+              #num
+            />
+            <p
+              (click)="verif(naa, mdp1, mdp2, email1, nomb, num)"
+              class="erreur"
+            >
+              {{ numcompte }}
+            </p>
+            <br />
+            <br />
+            <div class="wthree-text">
+              <label class="anim">
+                <input
+                  type="checkbox"
+                  class="checkbox"
+                  required=""
+                  (click)="verifcheck(value)"
+                />
+                <span>
+                  j'accepte les termes et conditions et la politique de
+                  confidentialité</span
+                >
+              </label>
+              <div class="clear"></div>
+            </div>
+            <input
+              type="submit"
+              value="VALIDER"
+              (click)="
+                verif(
+                  naa.value,
+                  mdp1.value,
+                  mdp2.value,
+                  email1.value,
+                  nomb.value,
+                  num.value
+                )
+              "
+            />
+          </form>
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="colorlibcopy-agile">
+        <p></p>
+      </div>
+      <!-- //copyright -->
+      <ul class="colorlib-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- //main -->
+  </div>
+</div>
