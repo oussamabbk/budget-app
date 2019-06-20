@@ -140,7 +140,9 @@ a {
 
 /* text align left */
 .txt-center {
+  /*
   text-align: center;
+  */
 }
 
 /* text align center */
@@ -195,10 +197,11 @@ img {
 
 /*-- end reset --*/
 .body {
-  background: #76b852;
+  background: rgba(0, 0, 0, 0.12);
   /* fallback for old browsers */
-  background-image: url("http://getwallpapers.com/wallpaper/full/6/9/9/74798.jpg") !important;
-  background: -webkit-linear-gradient(to top, #76b852, #8dc26f);
+  background-image: url("http://getwallpapers.com/wallpaper/full/6/9/9/74798.jpg");
+
+  background: -webkit-linear-gradient(to top, #b88f52, #8dc26f);
   background: -moz-linear-gradient(to top, #76b852, #8dc26f);
   background: -o-linear-gradient(to top, #76b852, #8dc26f);
   background: linear-gradient(to top, #76b852, #8dc26f);
@@ -206,10 +209,16 @@ img {
   background-attachment: fixed;
   font-family: "Roboto", sans-serif;
 }
+.logo {
+  margin: auto;
+  width: 70em;
+}
 
 h1 {
   font-size: 3em;
+
   text-align: center;
+
   color: #fff;
   font-weight: 100;
   text-transform: capitalize;
@@ -248,7 +257,7 @@ input[type="password"] {
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #fff 4%);
-  background-position: -800px 0;
+  /*background-position: -800px 0;*/
   background-size: 100%;
   background-repeat: no-repeat;
   color: #fff;
@@ -268,33 +277,40 @@ input[type="password"] {
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #fff 4%);
-  background-position: -800px 0;
+  /*background-position: -800px 0;*/
   background-size: 100%;
   background-repeat: no-repeat;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  margin: 3em 0;
-  content: attr(data-placeholder);
+  margin: 2em 0;
 }
 [contentEditable="true"]:empty:not(:focus):before {
   content: attr(data-text);
 }
 .avecerreur {
   font-size: 0.3em;
-  color: #fff;
+  color: #e91e63 !important;
   font-weight: 100;
   width: 94.5%;
   display: block;
-  border: none;
+
   padding: 0.8em;
   border: solid 1px #e91e63 !important;
   -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-  background: -webkit-linear-gradient(top, #e91e63 96%, #fff 4%) !important;
-  background: linear-gradient(to bottom, #e91e63 96%, #fff 4%) !important;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 96%,
+    #e91e63 4%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 96%,
+    #e91e63 4%
+  );
   background-position: -800px 0;
   background-size: 100%;
-  background-repeat: no-repeat;
+
   color: #e91e63;
   font-family: "Roboto", sans-serif;
   margin: 2em 0;
@@ -369,7 +385,8 @@ input[type="submit"]:hover {
 .agileits-top p {
   font-size: 1em;
   color: #fff;
-  text-align: center;
+
+  text-align: start;
   letter-spacing: 1px;
   font-weight: 300;
 }
@@ -423,7 +440,7 @@ input.checkbox:after {
   z-index: 1;
   width: 1.2em;
   height: 1.2em;
-  border: 1px solid rgb(216, 62, 62);
+  border: 1px solid rgb(216, 62, 62) !important;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
@@ -517,7 +534,7 @@ input.checkbox:checked:after {
   display: block;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: #ff8000 !important;
   bottom: -160px;
   -webkit-animation: square 20s infinite;
   -moz-animation: square 250s infinite;
@@ -573,7 +590,7 @@ input.checkbox:checked:after {
   -o-animation-duration: 22s;
   -ms-animation-duration: 22s;
   animation-duration: 22s;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: #ff8000 !important;
 }
 
 .colorlib-bubbles li:nth-child(5) {
@@ -623,7 +640,10 @@ input.checkbox:checked:after {
   animation-delay: 2s;
   -webkit-animation-duration: 40s;
   animation-duration: 40s;
+
   background-color: rgba(255, 255, 255, 0.3);
+  /*
+  background-color: #ff8000;*/
 }
 
 .colorlib-bubbles li:nth-child(10) {
@@ -833,7 +853,7 @@ input.checkbox:checked:after {
   }
 
   input[type="submit"] {
-    margin: 2em 0 1.5em;
+    margin: 1em 0 1.5em;
     letter-spacing: 3px;
   }
 
@@ -894,7 +914,7 @@ input.checkbox:checked:after {
 
   .text:focus,
   .text:valid {
-    background-position: 0 0px;
+    /*background-position: 0 0px;*/
   }
 
   input[type="submit"] {
